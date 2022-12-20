@@ -1,0 +1,14 @@
+@import '../../variables.module.scss';
+
+.badge {
+  display: inline-block;
+  padding: 0.325em 0.425em;
+  font-size: 75%;
+  line-height: 1;
+  color: $text-color-1;
+  background-color: $accent-color-1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.5em;
+  cursor: default;
+}

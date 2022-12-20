@@ -1,0 +1,25 @@
+@import './variables.module.scss';
+
+.app {
+  font-family: sans-serif;
+  margin: 1em auto;
+}
+
+body {
+  background-color: $base-color-1;
+  color: $text-color-1;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $base-color-1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $base-color-2;
+  border-radius: 20px;
+  border: 2px solid $accent-color-1;
+}

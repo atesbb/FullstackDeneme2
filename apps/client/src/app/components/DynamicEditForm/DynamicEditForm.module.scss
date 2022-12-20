@@ -1,0 +1,46 @@
+@import '../../variables.module.scss';
+
+.dynamicFormRemoveButton {
+  font-size: 1.1em;
+  background: none;
+  border: none;
+  color: $danger-color-1;
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  & > svg:hover {
+    color: $text-color-1;
+  }
+
+  & > svg:active {
+    transform: scale(0.9);
+  }
+}
+
+.dynamicFormAddButton {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  background-color: $base-color-2;
+  border: 1.5px solid $accent-color-1;
+  color: $text-color-1;
+  & > svg {
+    color: $success-color-1;
+  }
+
+  &:hover {
+    border-color: $text-color-1;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.dynamicFormInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+}

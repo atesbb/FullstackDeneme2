@@ -1,0 +1,93 @@
+@import '../../variables.module.scss';
+
+.editForm {
+  // display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.movieEditFormContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.movieEditFormBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(29, 29, 29, 0.712);
+}
+
+.modalForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.2em;
+  height: auto;
+  justify-content: center;
+  // width: 100%;
+
+  & > div {
+    flex-grow: 1;
+    flex-basis: 30%;
+  }
+}
+
+.formContainer {
+  box-shadow: $box-shadow-1;
+  border: 2px solid $accent-color-1;
+  background-color: $base-color-2;
+  width: 80%;
+  height: auto;
+  max-height: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3em;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.movieEditCloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $accent-color-1;
+
+  &:hover {
+    color: $text-color-1;
+  }
+}
+
+.textArea {
+  height: 100%;
+  min-height: 5em;
+}
+
+.formSubmitButton {
+  margin: 1.5em 0px;
+  height: 3em;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputError {
+  border-color: $danger-color-1;
+}
+
+.formInfo {
+  margin: 3px 0;
+  font-size: 0.8em;
+  color: $danger-color-1;
+}
